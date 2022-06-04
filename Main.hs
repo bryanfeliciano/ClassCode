@@ -6,6 +6,8 @@
 
 -- State implemented in functors,applicatives and monad
 
+type Count = Int
+
 -- We can use this to construct a type:
 newtype State s a = State { runState :: s -> (s, a) }
 
